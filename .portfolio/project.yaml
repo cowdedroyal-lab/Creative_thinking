@@ -1,0 +1,75 @@
+# 这个项目的证据化清单：每项内容都指向仓库里的证据。校验：profile-atlas check .
+schema: portfolio/project@1
+id: creative-thinking
+title: 创造性思维课程复习笔记
+title_en: Creative thinking course review notes
+kind: course
+role: solo
+status: done
+period: {start: "2025-12", end: "2025-12"}
+visibility: hidden
+
+summary: 国科大创造性思维课程的 Markdown 复习笔记，含 TRIZ 专题与检索索引
+problem: >-
+  创造性思维课程内容散在 9 讲讲义、9 章习题和 TRIZ 专题里，复习时要先找到该用哪个方法、在哪一讲。
+  仓库按讲、按章整理，并配了速查表和检索索引。
+
+techs:
+  - slug: triz
+    depth: core
+    note: 第 7 到 9 讲与 40 个发明原理
+    proposed: {name: TRIZ, name_zh: 发明问题解决理论, kind: method}
+  - slug: ideal-final-result
+    depth: used
+    note: 最终理想解 IFR 与理想度
+    proposed: {name: Ideal Final Result, name_zh: 最终理想解, kind: concept}
+  - slug: contradiction-resolution
+    depth: used
+    note: 技术矛盾、矛盾矩阵、物理矛盾分离原理
+    proposed: {name: Contradiction Resolution, name_zh: 矛盾解决原理, kind: method}
+  - slug: brainstorming
+    depth: touched
+    note: 第 5 讲创新技法
+    proposed: {name: Brainstorming, name_zh: 头脑风暴法, kind: method}
+  - slug: divergent-thinking
+    depth: touched
+    note: 第 3 讲创新思维方法
+    proposed: {name: Divergent Thinking, name_zh: 发散思维, kind: concept}
+
+contributions:
+  - what: 按讲整理 9 讲创造性思维讲义笔记，覆盖创新素质、思维方法、创新技法和 TRIZ
+    why: 把散落的课程内容按讲次收成可检索的 Markdown
+    techs: [triz, brainstorming, divergent-thinking]
+    evidence: [readme-lectures, lecture7]
+  - what: 整理 TRIZ 工具速查表，含 5 个 WHY、小人法、九屏幕法、金鱼法和 4 种分离原理对比
+    techs: [triz, contradiction-resolution]
+    evidence: [triz-cheatsheet]
+  - what: 做了按问题类型、应用场景、关键词、学习目标检索的快速检索索引
+    why: 遇到具体问题时能直接定位到该用的方法和讲次
+    evidence: [index-doc]
+
+evidence:
+  - id: readme-lectures
+    type: file
+    path: README.md
+    quote:
+      - "| 7 | `第7讲 TRIZ最终理想解与技术系统进化法则.md` | TRIZ 理想度、最终理想解(IFR)、S曲线、八大进化法则 |"
+      - "### 课程讲义（共 9 讲）"
+  - id: lecture7
+    type: file
+    path: 第7讲 TRIZ最终理想解与技术系统进化法则.md
+    quote: ["基于理想系统的概念而得到的针对一个特定技术问题的理想化解决方案的过程，称为最终理想解（Ideal Final Result, IFR）。"]
+  - id: triz-cheatsheet
+    type: file
+    path: 导航工具/TRIZ工具速查表.md
+    quote:
+      - "### 🔍 5个WHY（根因分析法）"
+      - "#### 原理对比表"
+  - id: index-doc
+    type: file
+    path: 导航工具/快速检索索引.md
+    quote:
+      - "## 🔍 一、按问题类型检索"
+      - "## 🎯 二、按应用场景检索"
+
+links: {}
