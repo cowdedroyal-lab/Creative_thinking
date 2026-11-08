@@ -9,7 +9,7 @@ status: archived
 period: {start: "2025-12", end: "2025-12"}
 visibility: hidden
 
-summary: 国科大创造性思维课程的 Markdown 复习笔记，含 TRIZ 专题与检索索引
+summary: 研究生创造性思维课程的 Markdown 复习笔记，含 TRIZ 专题与检索索引
 problem: >-
   创造性思维课程内容散在 9 讲讲义、9 章习题和 TRIZ 专题里，复习时要先找到该用哪个方法、在哪一讲。
   仓库按讲、按章整理，并配了速查表和检索索引。
